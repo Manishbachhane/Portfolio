@@ -16,9 +16,8 @@ const profile = {
 };  
 
 const skills = [
-  "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Express",
+  "C","C++","JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Express",
   "Tailwind CSS", "Redux", "REST APIs", "MongoDB",
-  "C","C++",
 ];
 
 const projects = [
