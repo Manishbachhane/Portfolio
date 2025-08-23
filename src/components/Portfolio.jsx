@@ -34,7 +34,7 @@ export default function Portfolio() {
 
   const handleDownload = () => {
   const link = document.createElement("a");
-  link.href = "./public/manish.pdf"; // Ensure this path is correct
+  link.href = "/manish.pdf"; 
   link.download = "manish.pdf";
   link.click();
 };
@@ -95,6 +95,7 @@ export default function Portfolio() {
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a 
   onClick={handleDownload}
+  // href="/manish.pdf" 
   className="group inline-flex items-center gap-2 rounded-xl border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-sm hover:bg-cyan-400/20 transition shadow-[0_0_30px_rgba(34,211,238,0.25)]"
 >
   <Download className="size-4" /> Download CV
