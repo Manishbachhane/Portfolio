@@ -32,6 +32,13 @@ export default function Portfolio() {
     window.scrollTo(0, 0);
   }, []);
 
+  const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = "./public/manish.pdf"; // Ensure this path is correct
+  link.download = "manish.pdf";
+  link.click();
+};
+
  const handleSubmit = (e) => {
   e.preventDefault();
   emailjs.sendForm(
@@ -86,10 +93,14 @@ export default function Portfolio() {
                 {profile.blurb}
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <a href={profile.resume} className="group inline-flex items-center gap-2 rounded-xl border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-sm hover:bg-cyan-400/20 transition shadow-[0_0_30px_rgba(34,211,238,0.25)]">
-                  <Download className="size-4" /> Download CV
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-                </a>
+                <a 
+  onClick={handleDownload}
+  className="group inline-flex items-center gap-2 rounded-xl border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-sm hover:bg-cyan-400/20 transition shadow-[0_0_30px_rgba(34,211,238,0.25)]"
+>
+  <Download className="size-4" /> Download CV
+  <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+</a>
+
                 <a href={profile.socials.github} className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/10 px-4 py-2 text-sm hover:bg-white/15 transition">
                   <Github className="size-4" /> GitHub
                 </a>

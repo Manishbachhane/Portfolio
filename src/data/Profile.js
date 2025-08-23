@@ -8,7 +8,7 @@ const profile = {
   location: "India",
   email: "manishbachhane@gmail.com",
   phone: "+91 7879207472",
-  resume: "./assets/Manish-Bachhane-Resume.pdf",
+  resume: "C:\\Users\\asd\\OneDrive\\Desktop\\GIT-DONE\\portfolio\\public\\manish.pdf",
   socials: {
     github: "https://github.com/Manishbachhane",
     linkedin: "https://www.linkedin.com/in/manish-bachhane-709661254/?trk=opento_sprofile_details",
