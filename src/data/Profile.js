@@ -13,11 +13,11 @@ const profile = {
     github: "https://github.com/Manishbachhane",
     linkedin: "https://www.linkedin.com/in/manish-bachhane-709661254/?trk=opento_sprofile_details",
   },
-};  
+};
 
 const skills = [
-  "C","C++","JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Express",
-  "Tailwind CSS", "Redux", "REST APIs", "MongoDB",
+  "C", "C++", "JavaScript", "React", "Node.js", "Express",
+  "Tailwind CSS", "REST APIs", "MongoDB",
 ];
 
 const projects = [
