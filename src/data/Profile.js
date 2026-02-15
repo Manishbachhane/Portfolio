@@ -54,3 +54,4 @@ const projects = [
 
 // Export all the data
 export { profile, skills, projects };
+
